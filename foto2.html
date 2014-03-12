@@ -7,34 +7,11 @@
     <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    
+    <script src="cordova.js" charset="utf-8" type="text/javascript"></script>
     <link href="Styles/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
-	<!-- Since jQuery Mobile relies on jQuery core's $.ajax() functionality,
- $.support.cors & $.mobile.allowCrossDomainPages must be set to true to tell
- $.ajax to load cross-domain pages. -->
-	<script type="text/javascript">
-		$(document).bind("mobileinit", function() {
-			$.support.cors = true;
-			$.mobile.allowCrossDomainPages = true;
-		});
-	</script>
-	
-	
-	<script src="cordova.js" charset="utf-8" type="text/javascript"></script>
     <script src="Scripts/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>    
     
-	<script type="text/javascript">
-    // Listener that will invoke the onDeviceReady() function as soon as phonegap has loaded properly
-    document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-        navigator.splashscreen.hide();
-
-        document.addEventListener("backbutton", onBackClickEvent, false); // Adding the back button listener    
-
-    }
-    </script>
-	
     <script type="text/javascript" charset="utf-8">
 
         var pictureSource;   // picture source
